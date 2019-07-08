@@ -43,7 +43,7 @@ install -v -m 755 -D api/read %{buildroot}/usr/libexec/nethserver/api/%{name}/re
 
 
 %files -f %{name}-%{version}-filelist
-%defattr(0644,root,root)
+%defattr(-,root,root)
 %dir %{_nseventsdir}/%{name}-update
 %doc COPYING
 
