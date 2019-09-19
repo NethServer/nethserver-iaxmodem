@@ -1,0 +1,7 @@
+#
+# nsapi_nethserver_iaxmodem
+#
+Cmnd_Alias NSAPI_NETHSERVER_IAXMODEM = \
+    /usr/libexec/nethserver/api/nethserver-iaxmodem/read
+
+Defaults!NSAPI_NETHSERVER_IAXMODEM !requiretty
