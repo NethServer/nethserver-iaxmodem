@@ -40,6 +40,7 @@ install -v -m 644 -D ui/public/logo.png %{buildroot}/usr/share/cockpit/%{name}/l
 install -v -m 644 -D ui/public/manifest.json %{buildroot}/usr/share/cockpit/%{name}/manifest.json
 install -v -m 755 -D api/read %{buildroot}/usr/libexec/nethserver/api/%{name}/read
 %{genfilelist} %{buildroot} \
+--file /etc/sudoers.d/50_nsapi_nethserver_iaxmodem 'attr(0440,root,root)' \
 --dir /var/log/iaxmodem/old 'attr(0640,root,root)' > %{name}-%{version}-filelist
 
 
