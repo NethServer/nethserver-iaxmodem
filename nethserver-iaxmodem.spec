@@ -1,6 +1,6 @@
 Summary: NethServer module to configure IAX modems
 Name: nethserver-iaxmodem
-Version: 1.2.7
+Version: 1.3.0
 Release: 1%{?dist}
 License: GPL
 Group: Networking/Daemons
@@ -50,6 +50,9 @@ install -v -m 755 -D api/read %{buildroot}/usr/libexec/nethserver/api/%{name}/re
 %doc COPYING
 
 %changelog
+* Tue Oct 01 2019 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.3.0-1
+- Sudoers based authorizations for Cockpit UI - NethServer/dev#5805
+
 * Tue Sep 03 2019 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.2.7-1
 - Cockpit. List correct application version - Nethserver/dev#5819
 
